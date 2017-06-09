@@ -125,13 +125,46 @@ LinkTypeId:1, menas that they're duplicate.
 
 ## Results in FSE paper
 
+### Deault SVM+wordEmbedding
+
+
+```
+                       precision         recall       f1-score        support
+
+       Duplicate    0.724(0.611)   0.525(0.725)   0.609(0.663)            400
+          Direct     0.514(0.56)   0.492(0.433)   0.503(0.488)            400
+        Indirect    0.779(0.787)    0.980(0.98)   0.864(0.873)            400
+        Isolated    0.601(0.676)   0.645(0.538)     0.622(0.6)            400
+
+     avg / total    0.655(0.658)   0.658(0.669)   0.650(0.656)           1600
+
+```
+
+
+### Tuning SVM+wordEmbedding
+
+
+
+```
+
+                       precision         recall       f1-score        support
+
+       Duplicate    0.885(0.898)   0.860(0.898)   0.878(0.898)            400
+          Direct    0.851(0.758)   0.903(0.903)   0.841(0.824)            400
+        Indirect     0.944(0.84)   0.995(0.773)   0.969(0.805)            400
+        Isolated     0.903(0.89)   0.905(0.793)   0.909(0.849)            400
+
+     avg / total    0.896(0.847)   0.897(0.842)   0.899(0.841)           1600
+
+
+```
 
 ## Results of this implementation
 
 Note: The following default SVM results are averaged over 10, while tuning 
 SVMs are over 100(10 models X 10-cross eval).
 
-## Deault SVM+wordEmbedding
+### Deault SVM+wordEmbedding
 * Note that the number in parentheses represent Xu's default SVM+wordEmbedding 
 method.
 
@@ -152,7 +185,7 @@ Done!
 
 ```
 
-## Tuning SVM+wordEmbedding
+### Tuning SVM+wordEmbedding
 
 * Note that the number in parentheses represent Xu's CNN+wordEmbedding method.
 * Depending on your hardware, the actual runtime may vary from 9 minutes
