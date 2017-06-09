@@ -1,6 +1,6 @@
 ## Note:
 
-There are some differences to the paper in FSE'2017:
+This is a better implementation of our FSE'17 paper. There are some differences to the paper in FSE'2017:
 
 * We observed that there're some variants in the word2vec model
  due to the randomness, therefore, we'd better verify the stability of 
@@ -9,7 +9,6 @@ There are some differences to the paper in FSE'2017:
 * Here, we report the average results across 10 different word2vec models 
 generated with 10 different seeds and report the median values.
 
-* FSE'17 paper only uses one word2vec model.
 
 # Introduction
 
