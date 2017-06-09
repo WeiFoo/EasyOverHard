@@ -121,7 +121,12 @@ LinkTypeId:1, menas that they're duplicate.
 
 
 
-# Result
+# Result 
+
+## Results in FSE paper
+
+
+## Results of this implementation
 
 Note: The following default SVM results are averaged over 10, while tuning 
 SVMs are over 100(10 models X 10-cross eval).
