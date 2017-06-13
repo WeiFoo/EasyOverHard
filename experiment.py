@@ -138,7 +138,7 @@ def run_SVM(word2vec_src):
 
 def prepare_word2vec():
   print("Downloading pretrained word2vec models")
-  url = "https://zenodo.org/record/804466/files/word2vecs_models.zip"
+  url = "https://zenodo.org/record/807727/files/word2vecs_models.zip"
   file_name = wget.download(url)
   with zipfile.ZipFile(file_name, "r") as zip_ref:
     zip_ref.extractall()
@@ -156,5 +156,5 @@ if __name__ == "__main__":
     np.random.seed(x)
     myword2vecs = [os.path.join(word_src, i) for i in os.listdir(word_src)
                    if "syn" not in i]
-    run_SVM(myword2vecs[x])
-    # run_tuning_SVM(myword2vecs[x])
+    # run_SVM(myword2vecs[x])
+    run_tuning_SVM(myword2vecs[x])
