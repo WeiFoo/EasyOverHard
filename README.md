@@ -31,12 +31,17 @@ tale to the software analytics community and suggest that not every new innovati
 # Reference
 
 ```
-@article{fu2017easy,
-  title={Easy over Hard: A Case Study on Deep Learning},
-  author={Fu, Wei and Menzies, Tim},
-  journal={arXiv preprint arXiv:1703.00133},
-  year={2017}
-}
+@inproceedings{fu2017easy,
+ author = {Fu, Wei and Menzies, Tim},
+ title = {Easy over Hard: A Case Study on Deep Learning},
+ booktitle = {Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering},
+ series = {ESEC/FSE 2017},
+ year = {2017},
+ location = {Paderborn, Germany},
+ pages = {49--60},
+ numpages = {12},
+ publisher = {ACM},
+} 
 ```
 
 
